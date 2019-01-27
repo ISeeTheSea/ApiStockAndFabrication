@@ -4,9 +4,8 @@ from flask import Flask
 
 
 app = Flask(__name__)
-
 def get_hit_count():
- return 11
+    return 10
 
 @app.route('/')
 def hello():
