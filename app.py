@@ -18,7 +18,7 @@ def check_db():
 
 @app.route('/')
 def hello():
-    connection = mysql.connector.connect(host="269376b19436",
+    connection = mysql.connector.connect(host="db",
         user="dbwdev",
         passwd="dbwdevpass", 
         database='apisf_db')
