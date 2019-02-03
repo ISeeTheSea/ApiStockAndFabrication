@@ -11,16 +11,16 @@ def get_hit_count():
 
 def check_db():
     connection = mysql.connector.connect(host="240411f0d3e7",
-        user="webmonkey",
-        passwd="webmonkeypass", 
+        user="dbwdev",
+        passwd="dbwdevpass", 
         database='apisf_stock')
     return connection
 
 @app.route('/')
 def hello():
-    connection = mysql.connector.connect(host="240411f0d3e7",
-        user="webmonkey",
-        passwd="webmonkeypass", 
+    connection = mysql.connector.connect(host="665b1252d8c9",
+        user="dbwdev",
+        passwd="dbwdevpass", 
         database='apisf_stock')
     cursor = connection.cursor()
     
