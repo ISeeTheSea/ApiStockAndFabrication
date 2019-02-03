@@ -18,13 +18,13 @@ def check_db():
 
 @app.route('/')
 def hello():
-    connection = mysql.connector.connect(host="665b1252d8c9",
+    connection = mysql.connector.connect(host="269376b19436",
         user="dbwdev",
         passwd="dbwdevpass", 
-        database='apisf_stock')
+        database='apisf_db')
     cursor = connection.cursor()
     
-    query = ("SELECT email from apisf_stock.admin")
+    query = ("SELECT email from apisf_db.admin")
     
     cursor.execute(query, ())
     
